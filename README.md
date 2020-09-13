@@ -14,4 +14,16 @@ Thermocouple: https://www.amazon.com/gp/product/B07QBPGVZZ/
 
 Fan: https://www.digikey.com/en/product-highlight/c/comair-rotron/muffin-xl-series-fans
 
-The fan is controlled by a TIP120 Transistor at 12v via a ~100 ohm resistor to limit current on the control pin.
+The fan is controlled by a TIP120 Transistor at 12v via a 180 ohm resistor from base pin to arduino control pin to limit the current down to 20mA.
+
+----
+Pins
+
+| Arduino Pin 	| Device Pin                                  	|
+|-------------	|---------------------------------------------	|
+| 0           	| LCD Button Analog pin                       	|
+| 3           	| D0 - Thermocouple                           	|
+| 4-9         	| LCD                                         	|
+| 11          	| TIP120 Base pin (Fan Controller transistor) 	|
+| 12          	| CSa - Thermocouple                          	|
+| 13          	| Clk - Thermocouple                          	|
